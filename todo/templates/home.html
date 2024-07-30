@@ -1,0 +1,14 @@
+{% extends 'base.html'   %}
+
+{% block body %}
+
+<!-- Landing Page Content -->
+<div class="container landing-page text-center">
+    <h1>Welcome to Your To-Do List</h1>
+    <p>Organize your tasks efficiently.</p>
+    <button class="btn btn-primary m-2"  >Get Started</button>
+    <a class="btn btn-secondary m-2" href="{% url 'todo' %}" role="button">Learn More</a>
+  </div>
+
+
+{% endblock %}

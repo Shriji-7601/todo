@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8faa8f8;
+            margin-bottom: 70px;
+            /* Adjust if needed to prevent content overlap with navbar */
+        }
+
+
+        .landing-page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .navbar-nav .nav-links {
+            color: brown;
+        }
+
+        .navbar-nav .nav-links:hover {
+            color: burlywood;
+        }
+
+        footer {
+            background-color: #101a10;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!------------Navigation Bar ------------>
+    <nav class="navbar navbar-expand-lg " style="background-color: #07121b;">
+        <a class="navbar-brand" href="#">To-Do List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <section class="vh-100 bg-image">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                            <form>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example4cg">Password</label>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-center mb-5">
+                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                        id="form2Example3cg" />
+                                    <label class="form-check-label" for="form2Example3g">
+                                        I agree all statements in <a href="#!" class="text-body"><u>Terms of
+                                                service</u></a>
+                                    </label>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                                </div>
+
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a
+                                        href="{% url 'login' %}">
+                                        <u>Login here</u></a>
+                                </p>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="md-0">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
